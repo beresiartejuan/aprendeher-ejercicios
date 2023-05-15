@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Mi primer HTML</title>
+</head>
+<body>
+<style>
+
+* {
+	margin: 0; padding: 0; box-sizing: border-box;
+}
+
+header {
+	padding: 5vh 0;
+	text-align: center;
+	font-family: Mono;
+}
+
+nav {
+	display: grid;
+	place-content: center;
+	background-color: rgba(200,200,200,.8);
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 3vh;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: rgba(40,40,40,.8);
+}
+
+nav ul li:hover {
+	background-color: rgba(170,170,170,.8);
+}
+
+main {
+	display: grid;
+	place-content: center;
+	margin-top: 5vh;
+	max-withd: 70vw;
+}
+
+main h3 {
+	text-decoration: underline;
+	font-size: 35px;
+}
+
+main p {
+	font-size: 20px;
+	margin: 1vh 0;
+}
+
+</style>
+	<header><h1>-- Este es un titulo en una cabecera --</h1></header>
+	<nav>
+		<ul>
+			<li><a href="#">Este es un item con link</a></li>
+			<li><a href="#">Este es otro item sin link</a></li>
+			<li><a href="#">Item cualquiera</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h3>Esto es un subtitulo</h3>
+		<p>Este es un parrafo común. Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno
+Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno</p>
+		<p>Este es otro parrafo Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno
+Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno</p>
+	</main>
+	<footer>
+		<p>Este es el pie de pagina</p>
+	</footer>
+</body>
+</html>
