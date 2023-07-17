@@ -1,0 +1,42 @@
+body {
+    background-color: #CFC;
+}
+
+p, li {
+    color: #00F;
+    font-family: Georgia, Cambria, Serif;
+    font-size: 16px;
+}
+
+h1 {
+    color: #F00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 32px;
+}
+
+h2 {
+    color: #A00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 24px;
+}
+
+span {
+    color: #FFF;
+    background-color: #000;
+    font-style: italic;
+}
+
+strong {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.book-data li {
+    color: #060;
+}
+
+.book-data li p {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}

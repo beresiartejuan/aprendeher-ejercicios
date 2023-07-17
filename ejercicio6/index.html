@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ejercicio 6</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <style>
+    
+      #start {
+        background: blue;
+        font-size: 1rem;
+        color: #fff;
+        max-height: 8vh;
+        min-height: 8vh;
+        font-weight: bold;
+        padding: 1vh 2vw;
+        border-radius: 10px;
+        border: none;
+        display: inline-block;
+        box-shadow: rgba(255,255,255,.7) 2px 2px 10px;
+        cursor: pointer;
+      }
+
+      #content {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+      }
+
+      #content p {
+        font-size: 2rem;
+        padding: 0;
+        margin: auto 0;
+      }
+
+      body {
+        background: rgba(0,0,0,.8);
+        display: flex;
+        min-width: 100vw;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        overflow: hidden;
+      }
+
+    </style>
+
+    <div id="content">
+      <p>🎉 👉</p>
+      <button id="start">Lanzar el codigo</button>
+      <p>👈 🎉</p>
+    </div>
+  
+  <script>
+
+    /**
+      * @name start
+      * @function
+      * @returns void
+      * @description Ejecuta el codigo principal
+      */
+    function start(){
+    
+      // Strings
+      console.log("String")
+
+      let mi_nombre = prompt("Ingrese su nombre: ");
+      alert("¡Hola, " + mi_nombre + "!");
+      console.log("El nombre que ingresaste fue:", mi_nombre);
+
+      // Booleanos
+      console.log("Booleanos");
+
+      let n1 = prompt("Ingresa un numero: ");
+      let n2 = prompt("Ingresa otro numero: ");
+
+      let b = n1 == n2;
+
+      alert(b);
+
+      let piso = prompt("Ingresa un piso(del 0 al 3)");
+
+      if(piso == 0){
+        alert("Estas en la planta baja");
+      }else if(piso == 1){
+        alert("Estas en el primer piso");
+      }else if(piso == 2){
+        alert("Estas en el segundo piso");
+      }else if(piso == 3){
+        alert("Estas en la terraza");
+      }else {
+        alert("¡El piso no existe!");
+      }
+
+      if(piso =< 1 && piso piso => 2){
+        console.log("¡Estas en uno de los pisos! Ni en la terraza ni en planta baja")
+      }
+
+      // confirm function
+
+      let continue_running = false;
+      continue_running = confirm("¿Queres ejecutar esto otra vez?");
+
+      if(continue_running) start();
+
+    }
+
+    const boton = document.querySelector("#start");
+    boton.addEventListener("click", start);
+
+  </script>
+
+  </body>
+</html>

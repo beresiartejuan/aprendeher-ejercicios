@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="button"] {
+    margin-top: 10px;
+    background-color: yellow;
+    color: black;
+}

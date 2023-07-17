@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ejercicio de edades</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="" rel="stylesheet">
+  </head>
+  <body>
+
+  <button id="boton">Iniciar</button> 
+  
+  <script>
+
+    function start(){
+
+    const edad = Number(prompt("Ingresa tu edad:"));
+
+    if(isNaN(edad)){
+      alert("Por favor, ingresa una edad valida!");
+      window.location.reload();
+    }
+
+    if(edad < 0 || edad > 110){
+      alert("Estas mintiendo 🤨");
+    }else if(edad < 18){
+      alert("No puedes manejar!");
+    }else if(edad >= 18 && edad < 85){
+      alert("¡Puedes conducir!");
+    }else {
+      alert("No te recomiendo conducir, pero puedes");
+    }
+
+    const cajon = Number(prompt("Ingresa el cajon que queres(del 1 al 4):"));
+
+    switch(cajon){
+      case 1:
+        alert("Elegiste el cajon 1")
+        break
+      case 2:
+        alert("Elegiste el cajon 2")
+        break
+      case 3:
+        alert("Elegiste el cajon 3")
+        break
+      case 4:
+        alert("Elegiste el cajon 4")
+        break
+      default:
+        alert("Ese cajon no existe!")
+        break
+    }
+
+    }
+
+    document.querySelector("#boton").addEventListener("click", start);
+
+  </script>
+
+  </body>
+</html>

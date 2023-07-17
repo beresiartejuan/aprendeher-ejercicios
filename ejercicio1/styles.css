@@ -23,6 +23,15 @@ nav ul li {
 	padding: 2vh 4vw;
 }
 
+nav li a {
+	text-decoration: none;
+	color: rgb(250, 250, 250);
+}
+
+h1 {
+	max-width: 60vw;
+}
+
 h1, h2, p, li {
 	color: rgb(250, 250, 250);
 }
@@ -31,9 +40,11 @@ header {
 	background-color: rgb(100, 116, 139);
 	display: flex;
 	width: 100%;
+	min-height: 30vh;
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
+	justify-content: center;
 	padding: 5vh 0;
 }
 
@@ -74,13 +85,13 @@ main p {
 	margin: 3vh 0;
 }
 
-main ul {
+main ul, main ol {
 	text-decoration: none;
 	list-style: none;
 }
 
-main ul li {
-	margin: 1vh 0;
+main ul li, main ol li {
+	margin: 3vh 0;
 }
 
 main section {
@@ -111,4 +122,20 @@ footer div {
 footer a {
 	text-decoration: underline;
 	color: rgb(22, 78, 99);
+}
+
+.receta {
+	background-color: rgb(100, 116, 139);
+	border: solid #000 2px;
+	border-radius: 10px;
+	min-width: 40vw;
+	max-width: 40vw;
+	margin: 2vh auto;	
+}
+
+.receta a {
+	color: rgb(250, 250, 250);
+	display: inline-block;
+	padding: 3vh 1vw;
+	text-decoration: none;
 }

@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccffcc;
+    padding: 5vh 0;
+}
+
+section {
+    padding: 0 5vw;
+}
+
+
+p, li {
+    color: #00F;
+    font-family: Georgia, Cambria, Serif;
+    font-size: 16px;
+    line-height: 5vh;
+}
+
+h1 {
+    color: #F00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 32px;
+    display: inline-block;
+    border-style: hidden hidden solid hidden;
+    border-width: 0 0 3px 0;
+    border-color: transparent transparent #F00 transparent;
+
+    text-shadow: 3px 3px 2px rgba(214, 0, 0, 0.7);
+}
+
+h2 {
+    color: #A00;
+    padding: 2px 0;
+    margin: 5vh 2vw;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 24px;
+    border-style: hidden hidden solid hidden;
+    border-width: 0 0 3px 0;
+    border-color: transparent transparent #A00 transparent;
+
+    text-shadow: 2px 2px 2px rgba(141, 1, 1, 0.7);
+}
+
+span {
+    color: #FFF;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 5px;
+    border-style: hidden;
+    padding: 2px 4px;
+    font-style: italic;
+}
+
+strong {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.data-book ul li {
+    color: #060;
+}
+
+.data-book ul li p {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+/* --- FORMULARIO --- */
+
+.form-register {
+    padding: 0;
+    margin: 0;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-register form {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.4);
+    min-width: 40vw;
+    max-width: 90%;
+    padding: 5vh 0;
+    border-style: hidden;
+    border-radius: 12px;
+}
+
+.form-register form h3 {
+    color: rgb(255,255,255);
+    font-size: 20px;
+    font-weight: bolder;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 3vh;
+    max-width: 90%;
+    padding-bottom: 2vh;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: rgb(255,255,255);
+}
+
+.form-register form div {
+
+    margin: 3vh auto;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    max-width: 80%;
+    gap: 1vh;
+
+}
+
+.form-register form div input {
+    display: inline-block;
+    background-color: transparent;
+    color: rgb(255,255,255);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255,255,255);
+    border-radius: 10px;
+    padding: 2vh 1vw;
+    font-size: 16px;
+}
+
+.form-register form input[type="submit"] {
+    display: inline-block;
+    background-color: transparent;
+    color: rgb(255,255,255);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255,255,255);
+    border-radius: 10px;
+    padding: 2vh 2vw;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    outline: 0 none;
+}
+
+.form-register form input[type="submit"]:hover, .form-register form input[type="submit"]:focus {
+    outline: none !important;
+    outline-width: 0;
+
+    box-shadow: none;
+
+    -moz-box-shadow: none;
+
+    -webkit-box-shadow: none;
+}
+
+.form-register form input[type="submit"]:hover {
+    background-color: rgb(255,255,255);
+    color: rgb(34, 75, 34);
+}
+
+.form-register form div label {
+    display: inline-block;
+    color: rgb(255,255,255);
+}
+
+.form-register form p {
+    color: rgb(255,255,255);
+    margin: 0;
+    margin-top: 4vh;
+    padding: 0;
+    line-height: normal;
+}

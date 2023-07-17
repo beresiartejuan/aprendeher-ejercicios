@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="" rel="stylesheet">
+  </head>
+  <body>
+
+    <button id="boton">Calculadora</button>
+
+  <script>
+
+    function calculadoraMejorada(){
+
+      const n1 = Number(prompt("Ingrese un numero:"));
+      const n2 = Number(prompt("Ingrese otro:"));
+
+      const operation = prompt("Ingrese una operación");
+
+      const c = {
+        suma: (a,b) => a + b,
+        resta: (a,b) => a - b,
+        division: (a,b) => a/b,
+        multiplicacion: (a,b) => a*b
+      }
+
+      const operations = {
+        suma: ["sumar", "suma", "+"],
+        resta: ["restar", "resta", "-"],
+        division: ["dividir", "división", "division", ":", "/"],
+        multiplicacion: ["multiplicar", "multiplicacion", "*"],
+      }
+
+      Object.keys(operations).forEach(k => {
+
+        if(operation.trim().toLowerCase() in operations[k]){
+          alert(c[k](n1, n2));
+        }
+
+      });
+
+    }
+
+    function calculadora(){
+
+      const number_one = Number(prompt("Ingrese el primer numero:"));
+      const number_two = Number(prompt("Ingrese el segundo numero:"));
+
+      const operation = prompt("¿Que operación quieres hacer? (SUMAR, RESTAR, MULTIPLICAR)");
+
+      if(isNaN(number_one) || isNaN(number_two)) return;
+
+      switch(operation.trim().toUpperCase()){
+        case "SUMAR":
+          alert(number_one + number_two);
+          break;
+        case "RESTAR":
+          alert(number_one - number_two);
+          break;
+        case "MULTIPLICAR":
+          alert(number_one * number_two);
+          break;
+        default:
+          alert("Ese metodo no esta disponible :(");
+      }
+
+    }
+
+    document.querySelector("#boton").addEventListener("click", calculadoraMejorada);
+
+  </script>
+
+  </body>
+</html>
